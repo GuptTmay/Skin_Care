@@ -8,11 +8,11 @@ export const ProductCard = (props) => {
       style={{ backgroundImage: `url(${props.image})` }}
     >
       <div className="m-1 flex w-full justify-between rounded-xl bg-[#FEFFF4] px-3 py-2 sm:p-4">
-        <div className="flex flex-col justify-between">
-          <span className="text-[14px] sm:text-[15px]  leading-[100%] tracking-[-5%]">
+        <div className="flex flex-col justify-between lg:justify-around">
+          <span className="text-[14px] sm:text-[15px] lg:text-[17px]  leading-[100%] tracking-[-5%]">
             {props.name}
           </span>
-          <span className="text-[12px] leading-[100%] tracking-[-5%] text-[#2D3B3680] uppercase">
+          <span className="text-[12px] lg:text-[14px] leading-[100%] tracking-[-5%] text-[#2D3B3680] uppercase">
             From ${props.price}
           </span>
         </div>
