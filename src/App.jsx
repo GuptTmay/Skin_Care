@@ -30,9 +30,9 @@ function App() {
   const words = paragraph.split(/\s+/);
 
   useEffect(() => {
-     window.addEventListener('load', () => {
-    setIsLoading(false);
-  }); 
+    setTimeout(() => {
+     setIsLoading(false); 
+    }, 2000); 
   }, []);
 
   useEffect(() => {
